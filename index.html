@@ -27,6 +27,33 @@
         <p class="text-secondary small">Un lugar sencillo para organizar tu día.</p>
       </div>
 
+      <form id="form-nueva-tarea" class="mb-5 row g-3">
+        <div class="col-12 col-md-8">
+          <label for="tarea-titulo" class="form-label small fw-medium text-secondary mb-1">Nueva tarea</label>
+          <input type="text" class="form-control" id="tarea-titulo" placeholder="¿Qué necesitas hacer?" required />
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="tarea-categoria" class="form-label small fw-medium text-secondary mb-1">Categoría (opcional)</label>
+          <select class="form-select" id="tarea-categoria">
+            <option value="" selected>Sin categoría</option>
+            <option value="Estudio">Estudio</option>
+            <option value="Personal">Personal</option>
+            <option value="Trabajo">Trabajo</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-8">
+          <label for="tarea-descripcion" class="form-label small fw-medium text-secondary mb-1">Descripción (opcional)</label>
+          <input type="text" class="form-control" id="tarea-descripcion" placeholder="Añade una descripción…" />
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="tarea-fecha" class="form-label small fw-medium text-secondary mb-1">Fecha de entrega</label>
+          <input type="date" class="form-control" id="tarea-fecha" />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100 py-2 fw-medium">Agregar</button>
+        </div>
+      </form>
+
       <article class="d-flex align-items-center gap-2 border rounded-3 bg-white px-2 px-md-3 py-3">
         <input role="button" class="form-check-input border-secondary-subtle fs-5 flex-shrink-0 ms-1" type="checkbox" />
         <div class="flex-grow-1 ms-1">
