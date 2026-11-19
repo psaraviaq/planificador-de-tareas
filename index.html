@@ -54,6 +54,18 @@
         </div>
       </form>
 
+      <ul class="nav nav-tabs gap-1 mb-4" id="filtros-tareas" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-todas" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Todas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-pendientes" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Pendientes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-completadas" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Completadas</button>
+        </li>
+      </ul>
+
       <article class="d-flex align-items-center gap-2 border rounded-3 bg-white px-2 px-md-3 py-3">
         <input role="button" class="form-check-input border-secondary-subtle fs-5 flex-shrink-0 ms-1" type="checkbox" />
         <div class="flex-grow-1 ms-1">
